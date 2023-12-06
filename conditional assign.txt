@@ -1,0 +1,105 @@
+Q1) What are conditional statements? Explain conditional statements with syntax and examples.
+Ans) Conditional statements, expressions, or simply conditionals are features of programming languages that tell the computer
+ to execute certain actions, provided certain conditions are met.
+
+1) if statement:
+syntax:
+if (condition){
+// statement 
+}
+2)if-else statement:
+An if statement can also include an optional else statement, which will execute if the condition is false.
+ syntax:
+if (condition){
+//if statement 
+
+} else {
+//else statement
+}
+Example: let shoppingDone = false;
+let childsAllowance;
+
+if (shoppingDone === true) {
+  childsAllowance = 10;
+} else {
+  childsAllowance = 5;
+}
+
+3) Nested if statement:
+We can nest if else statements inside another if else statements.
+syntax:
+if (condition){
+  if{
+  }
+}
+
+Example: if (choice === "sunny") {
+  if (temperature < 86) {
+    para.textContent = `It is ${temperature} degrees outside — nice and sunny. Let's go out to the beach, or the park, and get an ice cream.`;
+  } else if (temperature >= 86) {
+    para.textContent = `It is ${temperature} degrees outside — REALLY HOT! If you want to go outside, make sure to put some sunscreen on.`;
+  }
+}
+
+
+4)if else if ladder:
+JavaScript also supports the use of else if statement, which allows you to chain multiple conditions together
+also called if else ladder.
+ syntax:
+if (condition){
+//statement 1 
+
+} else if {
+// statement 2
+}else {
+// statement 3
+}
+
+Q3. What are loops, and what do we need them? Explain different types of loops with their syntax and
+examples.
+
+Ans)A Loop is used to execute a group of instructions or a block of code multiple times, without writing it repeatedly.
+1)For Loops:
+Syntax:
+for(initialization; condition; incrementation or decrementation)
+{
+Body of Loop;
+}
+Example:
+for(int i=1; i<10; i++)
+{
+print (i);
+}
+
+2)While Loop:
+A while Loop is an entry controlled Loop. The condition checking is done at the beginning of the Loop structure
+Syntax:
+while(condition)
+{
+Body of the Loop;
+}
+
+Example:int n=10;
+while(n>0)   
+{
+print (n);
+n--;
+}
+
+3)Do - While Loop
+A do-while Loop is an exit controlled Loop. The syntax of the do-while Loop is similar to that of the while Loop, with the 
+exception of the condition checking. The condition is always checked at the end of the do-while Loop.
+
+Syntax:
+do
+{
+Body of the Loop;
+} while(condition);
+
+Example:
+int i=10;
+do
+{
+print (i);
+i--;
+} while(n>0);
